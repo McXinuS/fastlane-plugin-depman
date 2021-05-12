@@ -1,0 +1,10 @@
+lane :test do
+  depman(
+    project_root: File.expand_path("../MyProject"),
+    server_host: "depman.company.org",
+    auth_token: "1234567890abcdef",
+    project_name: "my-project",
+    project_version: "1.0",
+    project_platform: "gradle"
+  )
+end
